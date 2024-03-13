@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import ParticalEffect from "./ParticalEffect";
 import { useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 interface props {
   movie: movieDescription[];
