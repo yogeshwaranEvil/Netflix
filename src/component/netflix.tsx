@@ -1,14 +1,10 @@
-import React from "react";
 import logo from "../assets/logo.webp";
 import bg from "../assets/mainhome1.jpg";
-import trending from "../assets/mainHome.jpg";
 import sta from "../assets/sta.png";
 import play from "../assets/play.svg";
 import info from "../assets/info.svg";
-import pit from "../assets/pit.webp";
-import { useEffect, useState, useRef } from "react";
-import { BrowserRouter as Router, Route, Link, Routes,useNavigate } from "react-router-dom";
-import Trending from "./Trending";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Slider from "./Slider";
 
 

@@ -1,4 +1,4 @@
-import React ,{useState , useEffect}from 'react'
+import {useState , useEffect}from 'react'
 import play from "../assets/play.svg";
 import { useNavigate ,useLocation,} from "react-router-dom";
 import Slider from './Slider';

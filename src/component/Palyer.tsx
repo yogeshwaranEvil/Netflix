@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { MdOutlinePowerSettingsNew,MdOutlineHome } from "react-icons/md";
 import logo from "../assets/logo.webp";
 
-interface flim1 {
-  movie1: string;
-}
+
 interface finalflim {
   name: string;
   movie: string;
