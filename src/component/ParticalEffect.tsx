@@ -1,8 +1,6 @@
-import React from 'react'
-import img from "../assets/mainhome1.jpg";
 import { useNavigate } from "react-router-dom";
 
-import { MdOutlinePlayCircleFilled ,MdThumbDownAlt,MdThumbDownOffAlt,MdThumbUpOffAlt,MdThumbUpAlt,MdAdd} from "react-icons/md";
+import { MdOutlinePlayCircleFilled ,MdThumbDownAlt,MdThumbUpAlt,MdAdd} from "react-icons/md";
 
 interface movieDescription {
   title: string;
@@ -20,7 +18,7 @@ interface movieDescription {
 }
 
 
-export default function ParticalEffect({title,year,imdb,movie,trailer,poster,description,language,Duration,rating,genre,directed_by}:movieDescription) {
+export default function ParticalEffect({title,movie,poster,genre}:movieDescription) {
   var s: string = "";
   const navigate = useNavigate();
 
