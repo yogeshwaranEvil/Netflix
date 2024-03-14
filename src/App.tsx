@@ -4,15 +4,15 @@ import Netflix from "./component/netflix";
 import Palyer from "./component/Palyer";
 import Befor from "./component/Befor";
 import bg from "./assets/login.jpg";
-// import { withAuthenticationRequired } from '@auth0/auth0-react';
+import { withAuthenticationRequired } from '@auth0/auth0-react';
 import { useState } from "react";
 import logo from "./assets/logo.webp";
 
 
-// const ProtectedRoute = ({ component, ...args }: any) => {
-//   const Component = withAuthenticationRequired(component, args);
-//   return <Component />;
-// };
+const ProtectedRoute = ({ component, ...args }: any) => {
+  const Component = withAuthenticationRequired(component, args);
+  return <Component />;
+};
 
 function App() {
   const [showNav, setShowNav] = useState(true);
@@ -51,9 +51,9 @@ function App() {
           )}
       
         <Routes >
-        <Route path="/player" Component={Palyer} />
-          <Route path="/Before" Component={Befor} />
-          <Route path="/netflix" Component={Netflix}/>
+        <Route path="/player" element={<ProtectedRoute  component={Palyer} />} />
+          <Route path="/Before" element={<ProtectedRoute component={Befor} />} />
+          <Route path="/netflix" element={<ProtectedRoute component={Netflix} />} />
         </Routes>
       </Router>
   );
