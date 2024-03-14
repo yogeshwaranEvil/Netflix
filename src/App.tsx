@@ -51,9 +51,9 @@ function App() {
           )}
       
         <Routes >
-        <Route path="/player" element={<ProtectedRoute  component={Palyer} />} />
-          <Route path="/Before" element={<ProtectedRoute component={Befor} />} />
-          <Route path="/netflix" element={<ProtectedRoute component={Netflix} />} />
+        <Route path="/player" Component={Palyer} />} />
+          <Route path="/Before" Component={Befor} />
+          <Route path="/netflix" Component={Netflix}/>
         </Routes>
       </Router>
   );
