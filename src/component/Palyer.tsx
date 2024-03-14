@@ -17,7 +17,7 @@ export default function Palyer() {
   const [flim, setFlim] = useState<finalflim>();
   
   useEffect(() => {
-    fetch("http://localhost:5173/api/flim/get/" + movieId)
+    fetch("/api/flim/get/" + movieId)
       .then((respon) => respon.json())
       .then((data) => {
         setFlim(data);

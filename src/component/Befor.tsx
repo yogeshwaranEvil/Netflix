@@ -27,7 +27,7 @@ export default function Befor() {
   const [movie, setmovie] = useState<movieDescription[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:5173/api/movie/get/ggg")
+    fetch("/api/movie/get/ggg")
       .then((respon) => respon.json())
       .then((data) => {
         setmovie(data);

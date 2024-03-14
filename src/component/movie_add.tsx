@@ -19,7 +19,7 @@ const [formData,setadd] = useState<formdata>();
 
 const onSubmitData = (e: React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
-     fetch("http://localhost:5173/api/movie/post",{
+     fetch("/api/movie/post",{
        method: 'POST',
        headers: {
           'Content-Type': 'application/json',
