@@ -17,7 +17,7 @@ export default function Palyer() {
   const [flim, setFlim] = useState<finalflim>();
   
   useEffect(() => {
-    fetch("/api/flim/get/" + movieId)
+    fetch("https://netflix-gilt-six.vercel.app/api/flim/get/" + movieId)
       .then((respon) => respon.json())
       .then((data) => {
         setFlim(data);

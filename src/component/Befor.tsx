@@ -27,7 +27,7 @@ export default function Befor() {
   const [movie, setmovie] = useState<movieDescription[]>([]);
 
   useEffect(() => {
-    fetch("/api/movie/get/ggg")
+    fetch("https://netflix-gilt-six.vercel.app/api/movie/get/ggg")
       .then((respon) => respon.json())
       .then((data) => {
         setmovie(data);

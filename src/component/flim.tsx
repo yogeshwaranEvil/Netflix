@@ -11,7 +11,7 @@ interface finalflim {
 export default function Flim({ movie1 }: flim1) {
   const [flim, setflim] = useState<finalflim>();
   useEffect(() => {
-    fetch(`/api/flim/get/${movie1}`)
+    fetch(`https://netflix-gilt-six.vercel.app/api/flim/get/${movie1}`)
       .then((respon) => respon.json())
       .then((data) => {
         setflim(data);

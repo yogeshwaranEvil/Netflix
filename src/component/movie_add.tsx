@@ -19,7 +19,7 @@ const [formData,setadd] = useState<formdata>();
 
 const onSubmitData = (e: React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
-     fetch("/api/movie/post",{
+     fetch("https://netflix-gilt-six.vercel.app/api/movie/post",{
        method: 'POST',
        headers: {
           'Content-Type': 'application/json',
